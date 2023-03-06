@@ -14,6 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,32 +25,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MessageActivity"
-            android:label="Message Inbox">
-
-        </activity>
-
+            android:label="Message Inbox"></activity>
         <activity
             android:name=".TimeDateActivity"
-            android:label="Battery Status">
-
-        </activity>
-
+            android:label="Battery Status"></activity>
         <activity
             android:name=".PhoneActivity"
-            android:label="Phone Manager">
-
-        </activity>
-
+            android:label="Phone Manager"></activity>
         <activity
             android:name=".CameraActivity"
-            android:label="Currency Recognition">
-
-        </activity>
-
-
+            android:label="Currency Recognition"></activity>
     </application>
 
 </manifest>

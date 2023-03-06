@@ -92,7 +92,7 @@ class TimeDateActivity : AppCompatActivity(), View.OnClickListener, TextToSpeech
             Log.d(TAG, "SUCCESS")
             tts!!.language = Locale.US
             tts?.speak(
-                "Time,date and battery status opened.",
+                "Date,time and battery status opened.",
                 TextToSpeech.QUEUE_FLUSH, null, null
             )
         }

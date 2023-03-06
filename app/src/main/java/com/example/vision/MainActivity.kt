@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
     override fun onClick(view: View) {
         val text = when (view.id) {
             R.id.msgBox -> "You clicked messaging!"
-            R.id.phoneMngr -> "You clicked phone manager!"
-            R.id.timeDate -> "You clicked Time/Date and Battery status!"
+            R.id.phoneMngr -> "You clicked Phone Manager!"
+            R.id.timeDate -> "You clicked Date, Time and Battery status!"
             R.id.cameraCard -> "You clicked phone camera!"
             else -> throw IllegalArgumentException("Undefined Clicked")
 
@@ -76,6 +76,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
         return true
     }
 
+
+
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     private fun speak(text: String) {
 
@@ -87,7 +89,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
         if (status == TextToSpeech.SUCCESS) {
             tts!!.language = Locale.US
             tts?.speak(
-                "Welcome to Vision.Single tap for details and long press to open an activity.",
+                "Welcome to Vision.Single tap for details and long press to open an activity.Message Inbox is present in" +
+                        "left side.Phone Manager in right side.Date,Time and Battery status in bottom left" +
+                        " corner." + "Currency Recognition in the bottom right corner of your phone's screen.",
                 TextToSpeech.QUEUE_FLUSH, null, null
             )
         }

@@ -156,7 +156,7 @@ class MessageActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             Log.d(TAG, "SUCCESS")
             tts!!.language = Locale.US
             tts?.speak(
-                "Messaging box opened.",
+                "Message inbox opened.",
                 TextToSpeech.QUEUE_FLUSH, null, null
             )
         }

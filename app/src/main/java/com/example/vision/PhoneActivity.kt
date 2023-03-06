@@ -16,7 +16,6 @@ import android.widget.EditText
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import kotlinx.android.synthetic.main.messaging.*
 import kotlinx.android.synthetic.main.phonemanager.*
 import java.util.*
 
@@ -186,7 +185,9 @@ class PhoneActivity : AppCompatActivity(), View.OnClickListener,
             tts!!.stop()
             tts!!.shutdown()
         }
+
         super.onDestroy()
+
     }
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
